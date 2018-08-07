@@ -3,7 +3,7 @@ const authToken = '6c4a1dd7e5c2d9bf6b044ce8a0c60be6';
 const client = require('twilio')(accountSid, authToken);
 
 const sendMessage = (number, name1, message1, callback) => {
-    const message = message1;
+    const message = message1 + 'dfghjkl';
     const phoneNumber = number;
     const name = name1;
     const data = {
