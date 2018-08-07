@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "export NODE_ENV=test || set NODE_ENV=test && mocha server/**/*.test.js",
+    "test": "export NODE_ENV=test || set NODE_ENV=test && mocha **/*.test.js",
     "test-watch": "nodemon --exec 'npm test'",
     "start": "nodemon server.js"
   },
@@ -13,8 +13,11 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
+    "expect": "^23.4.0",
     "express": "^4.16.3",
+    "mocha": "^5.2.0",
     "mongoose": "^5.2.6",
+    "supertest": "^3.1.0",
     "twilio": "^3.19.0"
   }
 }
